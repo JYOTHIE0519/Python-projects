@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT GRADE MANAGEMENT SYSTEM</h1>
+    <hr>
+    <h2>Student Details</h2>
+    <form id="studentForm">
+        Student Name:
+        <input type="text" name="name"
+        placeholder="Enter Student Name" required>
+        <br><br>
+        Branch:
+        <input type="text" name="branch"
+        placeholder="Enter Branch" required>
+        <br><br>
+        USN:
+        <input type="text" name="usn"
+        placeholder="Enter USN" required>
+        <br><br>
+        Semester:
+        <input type="number" name="semester"
+        placeholder="Enter Semester" required>
+        <br><br>
+        <hr>
+        <h2>Subject Details and Marks</h2>
+        <table>
+            <tr>
+                <th>Sl.No</th>
+                <th>Subject Name</th>
+                <th>Marks Obtained</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="subject1" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks1" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" name="subject2" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks2" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="text" name="subject3" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks3" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="text" name="subject4" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks4" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="text" name="subject5" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks5" min="0" max="100" required></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><input type="text" name="subject6" placeholder="Subject Name" required></td>
+                <td><input type="number" class="marks" name="marks6" min="0" max="100" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Calculate Result">
+        <input type="reset" value="Clear">
+    </form>
+    <hr>
+    <h2>Student Result</h2>
+    <div id="result">
+        <p>Total Marks: <span id="total">-</span>/600</p>
+        <p>Percentage: <span id="percentage">-</span>%</p>
+    </div>
+    <hr>
+    <h2>Message Us</h2>
+    <form id="contactForm">
+        Name:
+        <input type="text" id="contactName"
+        placeholder="Enter your name" required>
+        <br><br>
+        Email:
+        <input type="email" name="email"
+        placeholder="Enter your email" required>
+        <br><br>
+        Message:
+        <textarea name="message"
+        placeholder="Enter your message" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+    <p id="contactResult"></p>
+    <hr>
+    <footer>
+        <p>Student Grade Management System</p>
+        <p>Thank You for Visiting!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Body */
+body {
+    font-family: Arial;
+    background-color: #dcdcde;
+    margin: 20px;
+    padding: 20px;
+}
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: white;
+    background-color: navy;
+    padding: 20px;
+}
+/* Subheadings */
+h2 {
+    color: black;
+}
+/* Forms */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/* Table */
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+th {
+    background-color: navy;
+    color: white;
+    padding: 12px;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+/* Buttons */
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* Result */
+#result {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+

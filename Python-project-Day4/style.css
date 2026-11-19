@@ -1,0 +1,782 @@
+
+/* =================================
+   1. GOOGLE FONTS
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =================================
+   2. GLOBAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F7FF;
+    color: #252344;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =================================
+   3. NAVIGATION BAR
+================================= */
+
+header {
+    background: rgba(255,255,255,0.95);
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(50,40,100,0.06);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #7257D9;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+nav ul li a {
+    color: #45415F;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul a.active-link {
+    color: #7257D9;
+}
+
+
+/* =================================
+   4. HOME SECTION
+================================= */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10%;
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #F8F7FF,
+        #EEEAFE,
+        #E8F8F5
+    );
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    color: #252344;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.home-content h2 {
+    font-size: 22px;
+    color: #7257D9;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    color: #696781;
+    font-size: 16px;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.home-content a {
+    display: inline-block;
+    background: #7257D9;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.home-content a:hover {
+    background: #5740B6;
+    transform: translateY(-4px);
+}
+
+.home-image {
+    flex: 0 0 320px;
+    text-align: center;
+}
+
+.home-image img {
+    width: 290px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 35%;
+    border-radius: 45% 45% 25% 25%;
+    border: 7px solid white;
+    box-shadow: 0 12px 35px rgba(60,50,100,0.15);
+}
+
+
+/* =================================
+   5. COMMON SECTION STYLING
+================================= */
+
+section:not(#home) {
+    padding: 75px 10%;
+}
+
+section:not(#home) > h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #7257D9;
+    margin-bottom: 35px;
+}
+
+section:not(#home) > h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #35B8A4;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   6. ABOUT SECTION
+================================= */
+
+#about {
+    background: white;
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 12px auto;
+    color: #696781;
+    font-size: 16px;
+}
+
+
+/* =================================
+   7. EDUCATION SECTION
+================================= */
+
+#education {
+    background: #F8F7FF;
+    text-align: center;
+}
+
+
+/* =================================
+   8. COMMON CARDS
+================================= */
+
+.education-card,
+.skill-card,
+.project-card,
+.soft-skill-card,
+.certification-card,
+.activity-card {
+    background: white;
+    padding: 25px;
+    margin: 22px auto;
+    max-width: 850px;
+    border-radius: 16px;
+    border: 1px solid #EAE6FA;
+    box-shadow: 0 5px 20px rgba(60,50,100,0.06);
+    transition: 0.3s ease;
+}
+
+.education-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.soft-skill-card:hover,
+.certification-card:hover,
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(60,50,100,0.12);
+}
+
+.education-card h3,
+.skill-card h3,
+.project-card h3,
+.soft-skill-card h3,
+.certification-card h3,
+.activity-card h3 {
+    color: #7257D9;
+    margin-bottom: 10px;
+}
+
+.education-card p,
+.project-card p,
+.certification-card p,
+.activity-card p {
+    color: #696781;
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   9. TECHNICAL SKILLS
+================================= */
+
+#skills {
+    background: #F8F7FF;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.skill-card {
+    text-align: center;
+    margin: 0;
+    padding: 25px 15px;
+}
+
+.skill-card h3 {
+    margin: 0;
+}
+
+
+/* =================================
+   10. PROJECTS
+================================= */
+
+#projects {
+    background: white;
+}
+
+.project-card {
+    border-left: 4px solid #35B8A4;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card p {
+    background: #F8F7FF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   11. SOFT SKILLS
+================================= */
+
+#soft-skills {
+    background: #F8F7FF;
+}
+
+.soft-skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.soft-skill-card {
+    text-align: center;
+    margin: 0;
+}
+
+.soft-skill-card h3 {
+    margin: 0;
+}
+
+
+/* =================================
+   12. CERTIFICATIONS
+================================= */
+
+#certifications {
+    background: white;
+}
+
+
+/* =================================
+   13. CAREER INTERESTS
+================================= */
+
+#interests {
+    background: #F8F7FF;
+    text-align: center;
+}
+
+#interests p {
+    max-width: 800px;
+    margin: 15px auto;
+    color: #696781;
+}
+
+
+/* =================================
+   14. EXTRACURRICULAR ACTIVITIES
+================================= */
+
+#extracurricular {
+    background: white;
+}
+
+.activity-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.activity-card {
+    border-left: 5px solid #35B8A4;
+}
+
+.activity-card h3 {
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    margin: 0;
+}
+
+
+/* =================================
+   15. CONTACT SECTION
+================================= */
+
+#contact {
+    background: white;
+    text-align: center;
+}
+
+#contact p {
+    margin: 12px;
+    color: #696781;
+}
+
+#contact a {
+    color: #7257D9;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+#contact a:hover {
+    color: #35B8A4;
+}
+
+
+/* =================================
+   16. FOOTER
+================================= */
+
+footer {
+    background: #252344;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+
+/* =================================
+   17. JAVASCRIPT STYLING
+================================= */
+
+.menu-toggle {
+    display: none;
+    background: #7257D9;
+    color: white;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #7257D9;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: #35B8A4;
+}
+
+
+/* =================================
+   18. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .home-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-image {
+        flex: auto;
+    }
+
+    .home-image img {
+        width: 230px;
+        height: 280px;
+    }
+
+    section:not(#home) {
+        padding: 55px 7%;
+    }
+
+    section:not(#home) > h2 {
+        font-size: 27px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .skills-container,
+    .soft-skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card,
+    .skill-card,
+    .project-card,
+    .soft-skill-card,
+    .certification-card,
+    .activity-card {
+        padding: 20px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+}
+
+/* =================================
+   ELEGANT PROFESSIONAL THEME
+================================= */
+
+:root {
+    --primary: #243B50;
+    --secondary: #63877A;
+    --background: #F5F4EF;
+    --white: #FFFFFF;
+    --text: #293640;
+    --muted: #737D80;
+    --gold: #C3A477;
+    --border: #E4E6E1;
+}
+
+/* GLOBAL */
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+/* NAVIGATION */
+
+header {
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 3px 18px rgba(36,59,80,0.07);
+}
+
+nav h2 {
+    color: var(--primary);
+}
+
+nav ul li a {
+    color: var(--text);
+}
+
+nav ul li a:hover,
+nav ul a.active-link {
+    color: var(--secondary);
+}
+
+/* HOME */
+
+#home {
+    background: linear-gradient(
+        135deg,
+        #F5F4EF,
+        #EAF0EC,
+        #E9EEF2
+    );
+}
+
+.home-content h1 {
+    color: var(--primary);
+}
+
+.home-content h2 {
+    color: var(--secondary);
+}
+
+.home-content p {
+    color: var(--muted);
+}
+
+.home-content a {
+    background: var(--primary);
+}
+
+.home-content a:hover {
+    background: var(--secondary);
+}
+
+/* ANIMATED ROLE */
+
+.animated-role {
+    min-height: 42px;
+    color: var(--secondary);
+}
+
+#role-text {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease,
+                transform 0.5s ease;
+}
+
+#role-text.fade-out {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+/* SECTION HEADINGS */
+
+section:not(#home) > h2 {
+    color: var(--primary);
+}
+
+section:not(#home) > h2::after {
+    background: var(--gold);
+}
+
+/* SECTION BACKGROUNDS */
+
+#about,
+#projects,
+#certifications,
+#contact,
+#extracurricular {
+    background: var(--white);
+}
+
+#skills,
+#education,
+#soft-skills,
+#interests {
+    background: var(--background);
+}
+
+/* CARDS */
+
+.education-card,
+.skill-card,
+.project-card,
+.soft-skill-card,
+.certification-card,
+.activity-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 20px rgba(36,59,80,0.06);
+}
+
+.education-card h3,
+.skill-card h3,
+.project-card h3,
+.soft-skill-card h3,
+.certification-card h3,
+.activity-card h3 {
+    color: var(--primary);
+}
+
+.education-card p,
+.project-card p,
+.certification-card p,
+.activity-card p {
+    color: var(--muted);
+}
+
+.skill-card:hover,
+.activity-card:hover,
+.education-card:hover,
+.project-card:hover,
+.soft-skill-card:hover,
+.certification-card:hover {
+    box-shadow: 0 12px 28px rgba(36,59,80,0.12);
+}
+
+/* PROJECTS */
+
+.project-card {
+    border-left: 4px solid var(--secondary);
+}
+
+.project-card p {
+    background: #F5F7F5;
+}
+
+/* EXTRACURRICULAR */
+
+.activity-card {
+    border-left: 5px solid var(--secondary);
+}
+
+/* CONTACT */
+
+#contact a {
+    color: var(--secondary);
+}
+
+#contact a:hover {
+    color: var(--gold);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--primary);
+    color: white;
+}
+
+/* BUTTONS */
+
+.menu-toggle,
+.scroll-top {
+    background: var(--primary);
+}
+
+.menu-toggle:hover,
+.scroll-top:hover {
+    background: var(--secondary);
+}
+
+/* MOBILE ROLE */
+
+@media (max-width: 768px) {
+
+    .animated-role {
+        font-size: 19px;
+        min-height: 35px;
+    }
+
+}

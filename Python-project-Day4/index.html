@@ -1,0 +1,383 @@
+
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jyothi E | Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+    <nav>
+        <h2>Jyothi E.</h2>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#soft-skills">Soft Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#extracurricular">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- HOME -->
+
+<section id="home">
+
+   <div class="home-content">
+
+    <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hello, I'm Jyothi E</h1>
+
+    <h2 class="animated-role">
+        <span id="role-text">Computer Science Student</span>
+    </h2>
+
+    <p>
+        Passionate about technology, programming and
+        problem-solving. Exploring new ideas and building
+        applications through continuous learning.
+    </p>
+
+    <a href="#projects">Explore My Projects</a>
+
+</div>
+
+    <div class="home-image">
+
+        <img src="{% static 'images/profile.jpeg' %}"
+             alt="Jyothi E Profile Photo">
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT ME -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am Jyothi E, a 3rd-year Computer Science Engineering
+        student at Gopalan College of Engineering and Management,
+        Bengaluru.
+    </p>
+
+    <p>
+        Interested in software development, Java, Python,
+        problem-solving and web technologies.
+    </p>
+
+    <p>
+        Passionate about learning new technologies and
+        building practical projects.
+    </p>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+
+        <h3>Bachelor of Engineering</h3>
+        <h4>Computer Science Engineering</h4>
+
+        <p>Gopalan College of Engineering and Management, Bengaluru</p>
+        <p><strong>CGPA:</strong> 8.7</p>
+        <p><strong>Duration:</strong> 2024 - 2028</p>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>12th Standard - PCMC</h3>
+
+        <p>Cambridge Pre-University College, Bengaluru</p>
+        <p><strong>Percentage:</strong> 88%</p>
+        <p><strong>Year:</strong> 2024</p>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>10th Standard - SSLC</h3>
+
+        <p>S M English School, Bengaluru</p>
+        <p><strong>Percentage:</strong> 95%</p>
+        <p><strong>Year:</strong> 2022</p>
+
+    </div>
+
+</section>
+
+
+<!-- TECHNICAL SKILLS -->
+
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Python</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>Java</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+        </div>
+
+
+        <div class="skill-card">
+            <h3>MySQL</h3>
+        </div>
+
+        <div class="skill-card">
+            <h3>MS Excel</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+
+        <h3>01. AI Personal Assistant - Jasmine</h3>
+
+        <p>
+            Developed a Python-based AI personal assistant
+            with voice interaction, weather updates, news
+            and conversational features.
+        </p>
+
+        <p>
+            <strong>Technologies:</strong>
+            Python, Speech Recognition, OpenAI.
+        </p>
+
+    </div>
+
+    <div class="project-card">
+
+        <h3>02. Weather Forecasting Application</h3>
+
+        <p>
+            Developed a weather application featuring
+            location-based weather search, real-time updates
+            and 7-day forecasts.
+        </p>
+
+        <p>
+            <strong>Technologies:</strong>
+            HTML, CSS, JavaScript, OpenWeather API.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- SOFT SKILLS -->
+
+<section id="soft-skills">
+
+    <h2>Soft Skills</h2>
+
+    <div class="soft-skills-container">
+
+        <div class="soft-skill-card">
+            <h3>Problem-Solving</h3>
+        </div>
+
+        <div class="soft-skill-card">
+            <h3>Communication</h3>
+        </div>
+
+        <div class="soft-skill-card">
+            <h3>Teamwork</h3>
+        </div>
+
+        <div class="soft-skill-card">
+            <h3>Adaptability</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <div class="certification-card">
+        <h3>Python Fundamentals for Beginners</h3>
+        <p>Great Learning | 2024</p>
+    </div>
+
+    <div class="certification-card">
+        <h3>Operating System Fundamentals</h3>
+        <p>NPTEL | 2025</p>
+    </div>
+
+    <div class="certification-card">
+        <h3>Object Oriented Programming in Java</h3>
+        <p>Coursera | 2025</p>
+    </div>
+
+    <div class="certification-card">
+        <h3>Data Structures and Algorithms</h3>
+        <p>Coursera | 2025</p>
+    </div>
+
+    <div class="certification-card">
+        <h3>Introduction to Databases</h3>
+        <p>Coursera | 2025</p>
+    </div>
+
+    <div class="certification-card">
+        <h3>Introduction to Networking</h3>
+        <p>Coursera | 2026</p>
+    </div>
+
+</section>
+
+
+<!-- CAREER INTERESTS -->
+
+<section id="interests">
+
+    <h2>Career Interests</h2>
+
+    <p>
+        Software Development | Web Development |
+        Problem-Solving | Application Development
+    </p>
+
+</section>
+
+
+<!-- EXTRACURRICULAR ACTIVITIES -->
+
+<section id="extracurricular">
+
+    <h2>Extracurricular Activities</h2>
+
+    <div class="activity-container">
+
+        <div class="activity-card">
+            <h3>Volunteer – Open House Event</h3>
+            <p>Gopalan College of Engineering and Management</p>
+        </div>
+
+        <div class="activity-card">
+            <h3>Volunteer – Algo-Rhythm Technical event </h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Let's Connect</h2>
+
+    <p>
+        Open to learning opportunities, internships
+        and collaborations in technology.
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:jyothie1905@gmail.com">
+            jyothie1905@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/jyothie1905"
+           target="_blank" rel="noopener noreferrer">
+            Visit My LinkedIn Profile
+        </a>
+    </p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/JYOTHIE0519"
+           target="_blank" rel="noopener noreferrer">
+            Explore My GitHub
+        </a>
+    </p>
+
+    <p><strong>Location:</strong> Bengaluru, Karnataka</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Jyothi E. All Rights Reserved.</p>
+    <p>Designed and developed with passion.</p>
+
+</footer>
+
+
+<!-- SCROLL TO TOP -->
+
+<button class="scroll-top" id="scroll-top">↑</button>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
